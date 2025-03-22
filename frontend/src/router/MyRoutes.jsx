@@ -10,11 +10,11 @@ import Layout from "../layouts/Layout";
 const router = createBrowserRouter(
     [
         {
-            path: "/",
+            // path: "/",
             element: <Layout />,
             children: [
                 {
-            //   path: "/",
+              path: "/",
               element: <Home />,
             },
           {

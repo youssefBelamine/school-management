@@ -1,15 +1,16 @@
-// import { useState } from 'react'
-import './App.css';
-import MyRoutes from './router/MyRoutes';
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+import MyRoutes from './router/MyRoutes'
+
 function App() {
-// const [val, setVal] = useState(0)
+  const [count, setCount] = useState(0)
+
   return (
-    <>
-      {/* <h1>{val}</h1>
-      <button onClick={()=> setVal(val + 1)}>+</button>
-      <button onClick={()=> setVal(val - 1)}>-</button> */}
-      <MyRoutes />
-    </>
+      <div>
+        <MyRoutes />
+      </div>
   )
 }
 
