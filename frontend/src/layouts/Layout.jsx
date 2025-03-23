@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link, Outlet } from 'react-router-dom'
-import {HomeIcon, LogInIcon} from "lucide-react";
+import {HomeIcon, LogInIcon, User2Icon, UserRoundPlus} from "lucide-react";
 
 export default function Layout() {
   return (
@@ -17,11 +17,21 @@ export default function Layout() {
               <Link className={'flex'} to={'/'}>
               <HomeIcon className={'mx-1'}/>
                Home page</Link>
-            </li>
+            </li >
             <li className="ml-5 px-2 py-1">
               <Link className={'flex'} to={'/login'}>
               <LogInIcon className={'mx-1'}/>
                Login</Link>
+            </li>
+            <li className="ml-5 px-2 py-1">
+              <Link className={'flex'} to={'/register'}>
+              <UserRoundPlus className={'mx-1'}/>
+               Register</Link>
+            </li>
+            <li className="ml-5 px-2 py-1">
+              <Link className={'flex'} to={'/users'}>
+              <User2Icon className={'mx-1'}/>
+               Users</Link>
             </li>
           </ul>
         </div>
